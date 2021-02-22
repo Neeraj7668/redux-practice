@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Mobile from "../images/mobile.png";
 import "./Home.css";
 const Home = (props) => {
   console.warn("Home", props);
+  const [username, setName] = useState("");
   return (
     <div>
       <div className="cart-wrapper">
@@ -18,7 +19,11 @@ const Home = (props) => {
           <button
             className="addBtn"
             onClick={() =>
-              props.addToCartHandler({ price: 10000, name: "Vivo" })
+              props.addToCartHandler({
+                price: 10000,
+                name: "Vivo",
+                username: username,
+              })
             }
           >
             Add to Cart
@@ -31,6 +36,16 @@ const Home = (props) => {
           </button>
         </div>
       </div>
+      <form>
+        <input type="text" onChange={(e) => setName(e.target.value)} />
+        <button
+          className="addBtn"
+          onClick={() => props.addToCartHandler({ username })}
+        >
+          Submit
+        </button>
+      </form>
+      {username}
     </div>
   );
 };

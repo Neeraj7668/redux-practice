@@ -1,7 +1,8 @@
-import { Add_To_Cart, Remove_To_Cart } from "../constants";
+import { Add_To_Cart, Remove_To_Cart, Form_Input } from "../constants";
 
 const initialState = {
   cardData: [],
+  inputData: [],
 };
 
 export default function cardItems(state = [], action) {
@@ -12,6 +13,9 @@ export default function cardItems(state = [], action) {
     case Remove_To_Cart:
       state.pop();
       return [...state];
+
+    case Form_Input:
+      return [...state, { inputData: action.data }];
 
     default:
       return state;
