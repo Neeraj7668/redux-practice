@@ -1,5 +1,11 @@
 # Getting Started with Create React App
 
+User Interface Screen for better understanding *Class Component and Functional Component*
+
+![image](https://user-images.githubusercontent.com/53032130/195996285-29201503-863d-4ef6-8dfc-c5fbc17b64c9.png)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -68,6 +74,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-![image](https://user-images.githubusercontent.com/53032130/195996285-29201503-863d-4ef6-8dfc-c5fbc17b64c9.png)
 
