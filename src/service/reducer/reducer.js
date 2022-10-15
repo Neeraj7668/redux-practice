@@ -7,7 +7,6 @@ const initialState = {
 export default function cardItems(state = [], action) {
   switch (action.type) {
     case Add_To_Cart:
-      // console.log("reducer", action);
       return [...state, { cardData: action.data }];
     case Remove_To_Cart:
       state.pop();

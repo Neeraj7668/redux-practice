@@ -2,10 +2,11 @@ import React from "react";
 import Mobile from "../images/mobile.png";
 import "./Home.css";
 const Home = (props) => {
-  console.warn("Home", props);
   return (
     <div>
       <div className="cart-wrapper">
+        <h6>Functional Component</h6>
+
         <div className="img-wrapper item">
           <img src={Mobile} alt="vivo" />
         </div>

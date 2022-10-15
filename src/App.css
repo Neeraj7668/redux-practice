@@ -1,7 +1,10 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.App {
+  padding-top: 2rem;
 }
 .card-wrapper {
   float: right;
@@ -35,7 +38,7 @@
   border-radius: 50%;
   text-align: center;
   line-height: 27px;
-  top: 8px;
+  /* top: 8px; */
   z-index: 1;
 }
 .text-wrapper {
@@ -64,4 +67,4 @@
   border-radius: 10px;
   cursor: pointer;
   outline: none;
-} */
+}
